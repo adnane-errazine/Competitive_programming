@@ -1,0 +1,35 @@
+
+#include iostream
+using namespace std;
+int main() {
+int T;
+cinT;
+while(T)
+  {
+    T--;
+    int N;
+    cinN;
+    int sA=0,sB=0,A,B,F6die1=0,F6die2=0;
+    bool temp=true;
+    for(int i=0;iN;i++)
+    {
+        cinAB;
+        if(temp)
+        {
+            if(A==6){F6die1++;}
+            if(B==6){F6die2++;}
+        }
+        else
+        {
+            if(A==6){F6die2++;}
+            if(B==6){F6die1++;}
+        }
+        sA+=A;
+        sB+=B;
+        if(sA!=sB){temp=!temp;}
+    }
+
+    if(F6die1F6die2)cout1endl;
+    else cout2endl;
+  }
+}
